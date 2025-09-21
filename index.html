@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="logo">Sameer ahamed</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <span class="tag"><i class="fas fa-bolt"></i> Ready to innovate</span>
+            <h1>Fullstack <span>Developer</span></h1>
+            <h3>Bachelor of Computer</h3>
+            <p>i enjoy building clean and user-friendly websites,
+                solving real-world problems with code,
+                and continously learning new technologies</p>
+
+            <div class="skills">
+                <span>python</span>
+                <span>django</span>
+                <span>HTML & CSS</span>
+            </div>
+
+            <div class="buttons">
+                <a href="#projects" class="btn primary"><i class="fas fa-external-link-alt"></i> Projects</a>
+                <a href="#contact" class="btn secondary"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+
+            <div class="socials">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="image/coding_17027247.png" alt="Developer Illustration">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-text">
+            <span class="tag"><i class="fas fa-magic"></i> Transforming ideas into digital experiences</span>
+            <h2>Hello, I'm <span>Sameer ahamed</span></h2>
+            <p>
+               a BCA graduate and passionate Python & Django developer. I enjoy building web applications,
+                creating user-friendly designs, and continuously improving my coding skills.
+                As a fresher, I’m eager to apply my knowledge, learn from real-world projects,
+                and grow into a skilled IT professional.
+            </p>
+
+            <div class="buttons">
+                <a href="document/SAMEER AHAMED (2).pdf" download class="btn primary"><i class="fas fa-download"></i> Download CV</a>
+                <a href="#portfolio" class="btn secondary"><i class="fas fa-eye"></i> View Projects</a>
+            </div>
+        </div>
+
+        <div class="about-image">
+            <img src="image/picofme.png" alt="Profile Photo">
+        </div>
+    </section>
+
+    <script>
+        // Enable smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    </section>
+
+ <!-- Portfolio Section -->
+<section id="portfolio" class="portfolio">
+  <div class="tabs">
+    <button class="tab active" data-tab="projects"><i class="fas fa-code"></i> Projects</button>
+    <button class="tab" data-tab="certificates"><i class="fas fa-certificate"></i> Certificates</button>
+    <button class="tab" data-tab="techstack"><i class="fas fa-layer-group"></i> Tech Stack</button>
+  </div>
+
+  <!-- Projects Section -->
+  <div class="tab-content active" id="projects">
+    <div class="card">
+      <img src="image/ChatGPT Image Aug 16, 2025, 12_14_37 AM.png" alt="Comcast clone">
+      <h3>Comcast website clone</h3>
+      <p> Comcast Careers website clone with smooth navigation, a dynamic “Life at Comcast” section, and an interactive footer with social media links.</p>
+      <div class="card-buttons">
+        <a href=" https://sameerahamed2004.github.io/comcast-career-website-clone/" class="btn-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+        <a href="document/comcast_clone_details.pdf" class="btn-link"><i class="fas fa-arrow-right"></i> Details</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="image/ChatGPT Image Sep 21, 2025, 03_26_26 AM.png" alt="Comcast clone">
+      <h3>Commercast E-commerce Website</h3>
+      <p> CommerCast E-commerce website is Developed and deployed a fully functional E-commerce website using
+          Django, implementing product categories, cart management, and user
+          authentication.</p>
+      <div class="card-buttons">
+        <a href="https://commercast-ecommerce-website-01.onrender.com/ " class="btn-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+        <a href="document/CommerCast_Documents.pdf" class="btn-link"><i class="fas fa-arrow-right"></i> Details</a>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Certificates Section -->
+  <div class="tab-content" id="certificates">
+    <div class="certificates-container">
+      <div class="certificate-card">
+        <img src="image/cer.jpg" alt="Certificate 1">
+        <p>Python Django Certification - FITA Academy</p>
+      </div>
+      <div class="certificate-card">
+        <img src="images/certificate2.jpg" alt="Certificate 2">
+        <p>HTML & CSS Certification</p>
+      </div>
+      <div class="certificate-card">
+        <img src="images/certificate3.jpg" alt="Certificate 3">
+        <p>JavaScript Certification</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tech Stack Section -->
+  <div class="tab-content" id="techstack">
+    <!-- Tech Stack Section -->
+<div id="techstack" class="section hidden">
+  <h2 class="section-title">Tech Stack</h2>
+  <div class="tech-grid">
+    <div class="tech-card">
+      <img src="icons/python.png" alt="Python" />
+      <p>Python</p>
+    </div>
+    <div class="tech-card">
+      <img src="icons/django.png" alt="Django" />
+      <p>Django</p>
+    </div>
+    <div class="tech-card">
+      <img src="icons/html.png" alt="Html" />
+      <p>HTML</p>
+    </div>
+    <div class="tech-card">
+      <img src="icons/css.png" alt="CSS" />
+      <p>CSS</p>
+    </div>
+    <div class="tech-card">
+      <img src="icons/javascript.png" alt="JS" />
+      <p>Javascript</p>
+    </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<script>
+  const tabs = document.querySelectorAll(".tab");
+  const contents = document.querySelectorAll(".tab-content");
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      // Remove active state
+      tabs.forEach(btn => btn.classList.remove("active"));
+      contents.forEach(content => content.classList.remove("active"));
+
+      // Add active state
+      tab.classList.add("active");
+      document.getElementById(tab.dataset.tab).classList.add("active");
+    });
+  });
+</script>
+
+
+  <!-- Contact Section -->
+<section id="contact" class="contact">
+  <h2>Get in Touch</h2>
+  <p>Have something to discuss? Send me a message and let’s talk.</p>
+
+  <div class="contact-container">
+    <!-- Left Side (Form) -->
+    <div class="contact-form">
+      <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Right Side (Social Links) -->
+    <div class="contact-social">
+      <h3>Connect With Me</h3>
+      <ul>
+        <li><a href="https://github.com/sameerahamed2004" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/sameer-ahamed-799886319 " target="_blank">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/sameerahamed82?igsh=NHo0Z3p1ZnEyeHo1" target="_blank">Instagram</a></li>
+        <li><a href="https://www.snapchat.com/@sameerbtsarmy?share_id=KHhy5NUZm5M&locale=en-US" target="_blank">SnapChat</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
